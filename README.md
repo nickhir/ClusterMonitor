@@ -16,7 +16,7 @@ The script can simply be included in your cluster job submittion like this:
 #!/bin/bash
 #SBATCH --job-name=Example_run
 
-snakemake --cores 20 -s Snakefile && python cpu_ram_log.py -u nickhir -o cpu_ram.log --interval 5
+sambamba sort -t 20 some_bam.bam && python cpu_ram_log.py -u nickhir -o cpu_ram.log --interval 5
 ```
 
 
