@@ -16,9 +16,9 @@ The script can simply be included in your cluster job submittion like this:
 #!/bin/bash
 #SBATCH --job-name=Example_run
 
-{ sambamba sort -t 20 some_bam.bam } &
+sambamba sort -t 20 some_bam.bam &
 MainScript=$!
-{ python cpu_ram_log.py -u nickhir -o cpu_ram.log --interval 5 } &
+python cpu_ram_log.py -u nickhir -o cpu_ram.log --interval 5 &
 wait $MainScript
 pkill -P $$
 ```
