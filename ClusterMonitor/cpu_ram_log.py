@@ -8,10 +8,11 @@ import datetime
 import sys
 
 p = argparse.ArgumentParser()
-p.add_argument("-u", "--username", type=str, help="Specify the username for which we record CPU and Memory usage")
-p.add_argument("-o", "--output", type=str,
+p.add_argument("-u", "--username", type=str, required=True,
+               help="Specify the username for which we record CPU and Memory usage")
+p.add_argument("-o", "--output", type=str, required=True,
                help="Path to the file where the CPU and Memory usage gets logged (in tsv format)")
-p.add_argument("--interval", type=int,
+p.add_argument("--interval", type=int, required=True,
                help="Specify the time (in seconds) over which the CPU and Memory usage gets averaged")
 args = p.parse_args()
 
