@@ -36,4 +36,4 @@ python visualize_log.py -i cpu_ram.log -o cpu_ram_visualization.pdf
 ```
 
 The resulting plots will look somewhat like this:
-![exampleImage](ClusterMonitor/example/example_image.png)
+![exampleImage](https://github.com/nickhir/ClusterMonitor/raw/main/ClusterMonitor/example/example_image.png)

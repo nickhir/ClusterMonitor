@@ -17,9 +17,6 @@ setup(
     packages=find_packages(),
     install_requires=['matplotlib'],
     keywords=['python', 'cluster', 'monitor', 'CPU', 'RAM', 'usage', 'SLURM'],
-    classifiers=[
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
-    ]
+    classifiers=["Operating System :: Unix"]
+    scripts=['bin/cpu_ram_log', 'bin/viszualize_log']
 )
