@@ -1,5 +1,9 @@
 # ClusterMonitor
-A very simple python script which monitors and records the CPU and RAM consumption of submitted cluster jobs.
+[![PyPI version](https://badge.fury.io/py/clustermonitor.svg)](https://badge.fury.io/py/clustermonitor)[![Downloads](https://static.pepy.tech/personalized-badge/clustermonitor?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/clustermonitor)
+<hr>
+
+## What is it?
+A very simple python script to log the CPU and Memory consumption of submitted cluster jobs.
 
 ## Installation
 Simplest option is to install via [PyPi](https://pypi.org/):
